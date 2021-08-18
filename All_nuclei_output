@@ -1,0 +1,6 @@
+#!/bin/bash
+for i in $(cat $1);do
+cd $i ; cat nuclei_$i >> ~/nuclei_result
+echo "Copy---nuclei $i to nuclei_sites---"
+cd
+done

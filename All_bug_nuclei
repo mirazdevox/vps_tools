@@ -1,0 +1,22 @@
+#!/bin/bash
+cat nuclei_result | grep "CVE" >> ~/reports.txt
+cat nuclei_result | grep "phpinfo" >> ~/reports.txt
+cat nuclei_result | grep "wordpress-user-enumeration" >> ~/reports.txt
+cat nuclei_result | grep "takeover" >> ~/reports.txt
+cat nuclei_result | grep "credentials-disclosure" >> ~/reports.txt
+cat nuclei_result | grep "phpmyadmin-panel" >> ~/reports.txt
+cat nuclei_result | grep "ds-store-file" >> ~/reports.txt
+cat nuclei_result | grep "wordpress-panel" >> ~/reports.txt
+cat nuclei_result | grep "jira-" >> ~/reports.txt
+cat nuclei_result | grep "moodle-xss" >> ~/reports.txt
+cat nuclei_result | grep "wordpress-xmlrpc" >> ~/reports.txt
+cat nuclei_result | grep "google-api-key" >> ~/reports.txt
+cat nuclei_result | grep "adminer-panel" >> ~/reports.txt
+cat nuclei_result | grep "composer-config" >> ~/reports.txt
+cat nuclei_result | grep  "web-config" >> ~/reports.txt
+cat nuclei_result | grep  "open-redirect" >> ~/reports.txt
+cat nuclei_result | grep  "medium" >> ~/reports.txt
+cat nuclei_result | grep  "git-config" >> ~/reports.txt
+cat nuclei_result | grep  "high" >> ~/reports.txt
+cat ~/reports.txt
+#cat nuclei_result | grep "CVE" >> ~/reports.txt

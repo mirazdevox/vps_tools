@@ -1,0 +1,3 @@
+zip -r output.zip $1 
+curl -F "file=@output.zip" https://file.io/?expires=1w
+rm -rf output.zip;
